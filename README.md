@@ -44,6 +44,7 @@ Inclusiviteit is altijd gewenst maar het is belangrijk dat we oppassen met wie w
 In een ander voorbeeld benoemen ze de termen "master" en "slaves", deze zouden volgens het artikel wreed en verouderd zijn. In andere artikelen wordt er een link gemaakt met slavenij en dat de termen in het technische westen hint naar slavenij. Dit is simpelweg niet waar. De termen master en slave binnen de context van techniek verwijzen naar een master die het denkwerk doet en commandos geeft aan de slave, die het dan uitvoert. Om daar een parallel te trekken naar slavenij is een stretch en zwak. Artikelen zoals deze geven inclusiviteit en activisme een slechte reputatie. Bovendien worden in de artikelen alleen de slaven van de europeze slavenhandel genoemd, alsof slavenij nergens anders bestond of bestaat. Het is ongelovelijk kort door de bocht, emotioneel gestuurd en zwak onderbouwd.
 
 Bij inclusiviteit denk ik vooral aan toegankelijkheid op het web en dat we het web voor iedereen maken. Waar de artikel van UXdesign zich in vergist zijn de benamingen; inclusiviteit waarbij elk type persoon included is niet alleen onhaalbaar maar ook onlogisch, niet elk product/dienst is voor elk persoon. De term diversiteit zou het bericht beter omschrijven; diversiteit in ideen en verhalen of ervaringen kunnen leiden naar een beter product. Waar het artikel zich daar in vergist is dat bij diversiteit de aanname dat een kenmerk van iemands identiteit niet altijd aanwezig is. 
+
 ---
 
 ### Weekly Nerd #3
