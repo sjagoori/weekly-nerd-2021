@@ -62,8 +62,74 @@ Je bent nu 3 maanden 24/7 code aan het klopppppen. Hopelijk heb je super veel ge
 
 In de verschillende vakken die je hebt gevolgd zijn technieken en werkwijzen aan bod gekomen die een "echte" frontender ook doet: prototypen, experimenteren, ingewikkelde code, simpele code, onderzoeken, testen, lezen, documenteren, en heel veel HTML, CSS en JS, op de client en op de server. Welke onderwerpen hebben de meeste indruk op je gemaakt? Een gastspreker of een test? Een inzicht tijdens een Discord-sessie met een van de student-assistenten? Schrijf per vak wat je hebt geleerd en wat je meeneemt als frontender.
 
+#### Antwoord #3
+**Webapps from scratch:**      
+WAFS kwam niet als een verassing voor mij. Voor het vak moest er een webapp geschreven worden zonder het gebruik van een framework. Hierbij was de primaire focus om een app-like ervaring te maken. Dat betekende dus dat er geen extra pagina's geopend mocht worden.
+
+Gelukkig was niet nieuw voor mij. DOM manipulatie met data uit een API had ik al een keer gedaan voor enkele projecten in jaar 1, zie bijvoorbeeld[WeerApp1](https://oege.ie.hva.nl/~jagoora0011/.FED2/). Het vak ging helaas niet in op de technieken en voordelen/nadelen van technieken en approaches en was dus gemakkelijk te doen. 
+
+[Bezoek de Coination repo](https://github.com/sjagoori/coination)
+
+**CSS to the Rescue:**      
+Dit vak maakte een deep-dive op CSS, en wat er allemaal mogelijkl is met CSS. Hierbij mochten we een menu ontwerpen en stylen voor gebruikers met een beperking. Voor het menu had ik gekozen voor gebruikes met een (kleuren)blindheid.
+
+Ik heb geleerd om te onderzoeken welke veranderingen vereist zijn voor die beperkingen en welke accessibilty practices nodig zijn om het voor hen te ontwikkelen (denk aan kleurcontrast en lettergrote). Bovendien leerde ik voor het eerst om met een print stylesheet te werken. Door de `@print` mediaquery in te zetten was het mogelijk om de styling aan te passen voor het printen. Omdat ik het voor (kleuren)blinden ontworp, voegde ik een checkbox op de print, zodat de gebruikers het konden aankruizen.
+
+[Bezoek de CSS to the Rescue repo](https://github.com/sjagoori/css-to-the-rescue-2021)
+
+**Progressive Webapps:**      
+Bij het PWA maakten we een PWA. Het doel van het vak was om een installeerbare webapp te maken dat informatie vanuit een API laat zien. Hiervoor had ik de Reddit API gebruikt om een subreddit reader te maken. Uit de lijst subreddits of zoekbalk, is het mogelijk om subreddits door te lezen en berichten op te slaan of te openen. 
+
+Ik heb geleerd om met serviceworkers te werken en optimaal te cachen met serviceworkers. Bovendien was het een uitdaging om met het manifest bestand de iconen werkend te krijgen. De uitdaging was om alles af te checken en volledige 10'en te scoren in Google's Lighthouse. Daarnaast heb ik zelf verder gezocht naar optimalisaties zoals het cachen van API calls op de server en runtime. 
+
+[Bezoek de Read-it repo](https://github.com/sjagoori/Read-it)
+
+**Browser technologies:**      
+Voor het vak BT maakten we een Progressively Enhanced product. Hierbij maakte ik een enquette waarbij gebrukers/bezoekers:
+* zonder javascript 
+* * de enquette konden opsturen
+* * formvalidatie uitvoeren
+* * voortgang opslaan
+* met javascript 
+* * client-side validatie 
+* * automatisch voortgang bewaren
+* * automatisch voortgang bijhouden 
+* * automatisch submitten
+
+De grote uitdaging voor het vak lag bij het implementeren van zowel de frontend als de backend de logica; het bijhouden en terug sturen vaen informatie was een enorme uitdaging. 
+
+Bij afwezigheid van javascript, moesten de formvelden op de server opgevangen worden en met een unieke fingerprint opgeslagen worden in een bestand. Daarna moest er gecontrolleerd worden welke velden leeg waren en deze moesten dan opnieuw gegenereerd worden. Hiervoor heb ik een lange tijd moeten nadenken over een gepaste aanpak. Uiteingelijk kwam ik erachter dat de beste aanpak was om elk element in de form te controlleren en, wanneer het leeg is, het te appenden aan een nieuwe pagina waarin de elementen automatisch gegenereed worden ([zie code](https://github.com/sjagoori/Enquetter/blob/master/routes/router.js#L69)).
+
+Bij aanwezig van javascript was de uitdaging om bij te houden hoever de gebruiker in de enquette; dus het moest duidelijk zijn hoeveel forms er waren. Hiervoor heb ik een stuk code geschreven waarbij de aantal forms dynamisch is; het werkt met elk aantal forms ([zie code](https://github.com/sjagoori/Enquetter/blob/master/static/scripts/validate.js)). Hierbij houdt ik bij wanneer een form compleet is waardoor de website automatisch door scrollt naar de volgende. Als een extra bonus had ik een visuele representatie van de voorgang gemaakt; hierbij kleurt de titles van elk form donker en doorgestreept wanneer het compleet is.
+
+[Bezoek de Enquetter repo](https://github.com/sjagoori/Enquetter)
+
+**Real-time web:**      
+Voor het vak RTW maakten we gebruik van socket.io om een multi-user, interactief product te maken. Hiervoor had ik een YouTube client geschreven m.b.v. de YouTube player API en YouTube data API. Hierbij gebruikte ik de player API om een videospeler dynamisch te renderen en de interacties met socket events te binden. Met de data API haalde ik gerelateerde videos op, deze werden automatisch gecached in een externe Redis DB. Ook maakte ik een instant chat functie, hierbij werden de berichten in een lokale JSON bestand gecached zodat de laadtijd sneller was. Voor het vak heb ik niet veel nieuws geleerd en heb ik vooral gespeeld met optimalisaties.
+
+[Bezoek de TogetherTube repo](https://github.com/sjagoori/togethertube)
+
+**Human centered design:**      
+Voor het van HCI losten we een probleem op voor een gebruiker met een beperking. Voor mijn case was dat een gebruiker met een motorische beperking. Na het eerste keer testen met een kanban bord maakte ik op basis van de  persona een muziekspeler; hierbij onderzocht ik verschillende manieren van interactie. Bij elke test schreef ik een testverslag waarin ik alle inzichten beschreef én wat ik in de volgende iteratie zou toevoegen. Vergeleken met anderen maakte ik gebruik van React, hiermee had ik toegang tot libraries die het prototypen sneller maakte. Doordat ik ongeveer wist wat ik nodig zou hebben en hoe het werkte, kon ik makkelijk de libraries combnineren met interacties en mijn eigen maken. In de wiki van de repo staan de testverslagen met de bijbehorende conclusie.
+
+[Bezoek de Musicle repo](https://github.com/sjagoori/togethertube)
 
 
+### Weekly Nerd artikelen
+
+Drie keer schrijf je een uitgebreid artikel over een relevant web design en development onderwerp. 
+Bijvoorbeeld een eigen onderzoek naar een techniek of een (technische) analyse van een website die in een Weekly Nerd is behandeld. 
+Zorg voor juiste verwijzingen, bronvermelding en goede leesbare teksten. 
+Engels wordt aangeraden.
+
+Je blog met de verslagen en artikelen moet voor de laatste week van de Meesterproef ingeleverd zijn.
+
+Tip: Schrijf elke lesblok een artikel en lever dit in, dan hoef je niet alle artikelen aan het eind van de minor te schrijven en krijg je tussentijds feedback op je niveau en schrijfstijl. 
+
+**Artikel 1:**
+
+*Web development: a Node CRUD web application:*
+[Link naar het artikel](https://shabier.medium.com/web-development-crud-web-application-76f3b7ce127b)
 
 
 
@@ -113,18 +179,6 @@ Je kan gesprekken voeren met bedrijven voor een afstudeerstage, of je alvast ori
 |  | GRRR |
 |  | ICAT |
 |  | Funda |
-
-
-### Weekly Nerd artikelen
-
-Drie keer schrijf je een uitgebreid artikel over een relevant web design en development onderwerp. 
-Bijvoorbeeld een eigen onderzoek naar een techniek of een (technische) analyse van een website die in een Weekly Nerd is behandeld. 
-Zorg voor juiste verwijzingen, bronvermelding en goede leesbare teksten. 
-Engels wordt aangeraden.
-
-Je blog met de verslagen en artikelen moet voor de laatste week van de Meesterproef ingeleverd zijn.
-
-Tip: Schrijf elke lesblok een artikel en lever dit in, dan hoef je niet alle artikelen aan het eind van de minor te schrijven en krijg je tussentijds feedback op je niveau en schrijfstijl. 
 
 
 ### Voorbeelden van artikelen van voorgaande jaren
